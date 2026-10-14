@@ -57,7 +57,7 @@ public class Device : IEntity
 public class Lamp : Device
 {
     public int Brightness { get; set; }
-    public string Color { get; set; }
+    public string Color { get; set; } = "";
     public double PowerWatts { get; set; }
 
     public Lamp() { }
