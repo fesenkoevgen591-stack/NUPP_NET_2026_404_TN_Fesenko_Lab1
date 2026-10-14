@@ -1,0 +1,23 @@
+﻿LAB 2: SmartHome Async CRUD
+Created: 1000
+Brightness: min=1, max=100, avg=49,94
+Power: min=5,04, max=100,00, avg=53,29
+Page 2: 20
+Read: True
+Update: True
+Remove: True
+Save: True
+Remaining objects: 999
+LAB 2: Async CRUD, Parallel, LINQ
+Created: 1000
+Passengers: min=10, max=80, avg=46,49
+Year: min=2000, max=2026, avg=2012,64
+Mileage: min=62,97, max=898754,82, avg=457125,63
+Page 2 (20 per page): 20
+Read: True
+Update: True
+Remove: True
+Save: True => C:\Users\Skay\Desktop\NUPP_NET_2026_404_TN_Fesenko_Lab1\Lab2_NET\bin\Debug\net8.0\buses.json
+lock counter: 1000
+SemaphoreSlim peak <= 2: 2
+AutoResetEvent signaled: True
