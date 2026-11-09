@@ -6,7 +6,7 @@ using SmartHome.Infrastructure.Models;
 Console.WriteLine("=== LAB 3: ENTITY FRAMEWORK CORE ===");
 
 string dbPath = Path.GetFullPath(
-    "SmartHome.Infrastructure/SmartHome.db");
+    "Lab3/SmartHome.Infrastructure/SmartHome.db");
 
 var options = new DbContextOptionsBuilder<SmartHomeContext>()
     .UseSqlite($"Data Source={dbPath}")

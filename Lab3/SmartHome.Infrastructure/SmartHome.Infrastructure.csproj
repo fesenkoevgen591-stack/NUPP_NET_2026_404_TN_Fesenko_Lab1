@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\SmartHome.Common\SmartHome.Common.csproj" />
+    <ProjectReference Include="..\..\Shared\SmartHome.Common\SmartHome.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>
