@@ -1,0 +1,37 @@
+@model SmartHome.Infrastructure.Models.DeviceModel
+
+@{
+    ViewData["Title"] = "Видалити пристрій";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Підтвердьте видалення запису.</p>
+<div>
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Назва
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            У мережі
+        </dt>
+        <dd class = "col-sm-10">
+            @(Model.IsOnline ? "Так" : "Ні")
+        </dd>
+        <dt class = "col-sm-2">
+            Кімната
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Room.Name)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Видалити" class="btn btn-danger" /> |
+        <a asp-action="Index">До списку</a>
+    </form>
+</div>

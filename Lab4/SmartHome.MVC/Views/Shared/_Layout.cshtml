@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] · SmartHome</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="container" aria-label="Основна навігація">
+            <a class="brand" asp-controller="Rooms" asp-action="Index">SmartHome</a>
+            <a asp-controller="Rooms" asp-action="Index">Кімнати</a>
+            <a asp-controller="Devices" asp-action="Index">Пристрої</a>
+        </nav>
+    </header>
+    <main class="container">
+        @RenderBody()
+    </main>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

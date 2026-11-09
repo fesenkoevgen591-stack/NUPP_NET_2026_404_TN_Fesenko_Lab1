@@ -427,3 +427,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Local Lab4 SQLite database and sidecar files
+SmartHome.Lab4.db*

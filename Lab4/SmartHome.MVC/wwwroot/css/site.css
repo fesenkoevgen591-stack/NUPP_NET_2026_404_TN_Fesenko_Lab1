@@ -1,0 +1,102 @@
+:root {
+    color-scheme: light;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    color: #172b36;
+    background: #f7fafb;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 65rem;
+    margin-inline: auto;
+    padding: 1rem 1.25rem;
+}
+
+header {
+    background: #103744;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+nav a {
+    color: #fff;
+}
+
+.brand {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a {
+    color: #005d76;
+}
+
+h1 {
+    margin-top: .25rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: .65rem;
+    border-bottom: 1px solid #d7e3e7;
+    text-align: left;
+}
+
+dt {
+    font-weight: 650;
+}
+
+dd {
+    margin: 0 0 .75rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label,
+.form-control {
+    display: block;
+}
+
+.form-control {
+    width: min(22rem, 90%);
+    border: 1px solid #71929d;
+    border-radius: .25rem;
+    padding: .45rem;
+    font: inherit;
+}
+
+.btn {
+    border: 0;
+    border-radius: .25rem;
+    background: #005d76;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    padding: .45rem .8rem;
+    text-decoration: none;
+}
+
+.btn-danger {
+    background: #9d2b2b;
+}
+
+.text-danger {
+    color: #9d2b2b;
+}
