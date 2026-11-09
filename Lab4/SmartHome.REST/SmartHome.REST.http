@@ -1,0 +1,55 @@
+@baseUrl = http://localhost:5083
+@roomId = 00000000-0000-0000-0000-000000000000
+@deviceId = 00000000-0000-0000-0000-000000000000
+
+# Після POST підставте отримані id у roomId і deviceId вище.
+
+POST {{baseUrl}}/api/rooms
+Content-Type: application/json
+
+{"name":"Кухня","floor":1}
+
+###
+
+GET {{baseUrl}}/api/rooms?page=1&amount=10
+
+###
+
+GET {{baseUrl}}/api/rooms/{{roomId}}
+
+###
+
+PUT {{baseUrl}}/api/rooms/{{roomId}}
+Content-Type: application/json
+
+{"name":"Кухня та їдальня","floor":1}
+
+###
+
+POST {{baseUrl}}/api/devices
+Content-Type: application/json
+
+{"name":"Лампа","isOnline":false,"roomId":"{{roomId}}"}
+
+###
+
+GET {{baseUrl}}/api/devices?page=1&amount=10
+
+###
+
+GET {{baseUrl}}/api/devices/{{deviceId}}
+
+###
+
+PUT {{baseUrl}}/api/devices/{{deviceId}}
+Content-Type: application/json
+
+{"name":"Лампа над столом","isOnline":true,"roomId":"{{roomId}}"}
+
+###
+
+DELETE {{baseUrl}}/api/devices/{{deviceId}}
+
+###
+
+DELETE {{baseUrl}}/api/rooms/{{roomId}}

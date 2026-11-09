@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Infrastructure", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Lab3", "SmartHome.Lab3\SmartHome.Lab3.csproj", "{FDDBB63B-E4D6-4ED0-AB55-10C2AB64C80F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab4", "Lab4", "{6D15ABF6-8456-4EC0-8B13-D3E45B65CD1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.REST", "Lab4\SmartHome.REST\SmartHome.REST.csproj", "{12761004-6FDB-4B8A-B181-0FACFE4C7176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.MVC", "Lab4\SmartHome.MVC\SmartHome.MVC.csproj", "{568F0380-C68F-4A6A-B80C-DAA576ADDE8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +54,17 @@ Global
 		{FDDBB63B-E4D6-4ED0-AB55-10C2AB64C80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDDBB63B-E4D6-4ED0-AB55-10C2AB64C80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDDBB63B-E4D6-4ED0-AB55-10C2AB64C80F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12761004-6FDB-4B8A-B181-0FACFE4C7176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12761004-6FDB-4B8A-B181-0FACFE4C7176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12761004-6FDB-4B8A-B181-0FACFE4C7176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12761004-6FDB-4B8A-B181-0FACFE4C7176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{568F0380-C68F-4A6A-B80C-DAA576ADDE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{568F0380-C68F-4A6A-B80C-DAA576ADDE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{568F0380-C68F-4A6A-B80C-DAA576ADDE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{568F0380-C68F-4A6A-B80C-DAA576ADDE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12761004-6FDB-4B8A-B181-0FACFE4C7176} = {6D15ABF6-8456-4EC0-8B13-D3E45B65CD1A}
+		{568F0380-C68F-4A6A-B80C-DAA576ADDE8D} = {6D15ABF6-8456-4EC0-8B13-D3E45B65CD1A}
 	EndGlobalSection
 EndGlobal
